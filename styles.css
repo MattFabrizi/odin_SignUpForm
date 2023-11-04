@@ -1,10 +1,10 @@
 body {
     display: flex;
     flex-wrap: wrap;
-    /*grid-template-columns: repeat(3, 1fr);*/
     margin: 0;
     height: 100vh;
     font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 .sidebar {
@@ -13,9 +13,44 @@ body {
     background-repeat: no-repeat;
     flex: 1 1 auto;
     min-width: 250px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.logo-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(0,0,0,0.15);
+    margin-top: 30vh;
+    margin-bottom: auto;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.logo-div h2 {
+    font-weight: 800;
+}
+
+.logo {
+    width: 55px;
+    height: 55px;;
+}
+
+.attribution {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+}
+
+.attribution a {
+    color: white;
 }
 
 .form-container {
-    /*grid-column: 2 / span 2;*/
-    flex: 2 1 600px;
+    flex: 2 1 550px;
+    padding: 2rem;
 }
